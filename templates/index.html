@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mission to Mars</title>
     <link
@@ -10,12 +11,13 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
   <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=vqzUVDljVufRS99g_XIwqzg98LBN3alb7PSrTEp31uj0TCfliptZDOeOr1Sc-dIqQhF3G7IAkuYQehmU0DfkCWpuWzd3DtPwepN2aAL6K_flIvi-TaPVsYleL1I3Hsz9l8W292vAxaNPwgS-f_mgGg" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly8ydS1kYXRhLWN1cnJpY3VsdW0tdGVhbS5zMy5hbWF6b25hd3MuY29tL2RhdGF2aXotb25saW5lL21vZHVsZV8xMC9pbmRleC5odG1s"/>
+  
 </head>
 
 
   <body>
 
-    <div class="container">
+    <div class="container-fluid">
 
       <!-- Add Jumbotron to Header -->
       <div class="jumbotron text-center">
@@ -62,7 +64,7 @@
         <!---- div class="col-md-4" -->
           <!-- insert mars hemisphere  -->
       <div class="row" id="mars-hemispheres">
-        <div class="col-md-8">
+        <div class="col-md-6">
           <h2>Mars Hemispheres</h2>
           <img
             src= "{{mars.hemispheres }}"
@@ -73,7 +75,7 @@
       </div>
         
           {% for hemisphere in mars.hemispheres %}
-          <div class="col-md-8">
+          <div class="col-md-6">
             <div class="thumbnail">
               <img src="{{hemisphere.img_url}}" class="img-responsive" alt=" " >
               <div class="caption">
